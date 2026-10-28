@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>(주)아준스틸 | AJUN STEEL - 고객의 가치를 창조하는 기업 | 포스코 협력 철강자재 B2B</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Google Fonts: Inter & Pretendard fallback -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Noto Sans KR"', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'sans-serif'],
+            mono: ['"Chakra Petch"', 'monospace']
+          },
+          colors: {
+            steel: {
+              950: '#060a12',
+              900: '#0b1320',
+              850: '#101c30',
+              800: '#172740',
+              700: '#233758',
+              600: '#344e78',
+              400: '#6988b8',
+              200: '#b4c9e8',
+              100: '#e3edf9'
+            },
+            ajun: {
+              navy: '#0d2242',
+              blue: '#0d5ca8',
+              lightBlue: '#1a77d4',
+              cyan: '#00c3ff',
+              accent: '#3b82f6'
+            }
+          },
+          animation: {
+            'marquee': 'marquee 30s linear infinite',
+          },
+          keyframes: {
+            marquee: {
+              '0%': { transform: 'translateX(0%)' },
+              '100%': { transform: 'translateX(-50%)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 7px; }
+    ::-webkit-scrollbar-track { background: #060a12; }
+    ::-webkit-scrollbar-thumb { background: #233758; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #0d5ca8; }
+
+    .grid-bg {
+      background-size: 36px 36px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+    }
+    .blur-orb { filter: blur(100px); }
+  </style>
+</head>
+<body class="bg-steel-950 text-slate-200 font-sans antialiased selection:bg-ajun-blue selection:text-white relative overflow-x-hidden">
+
+  <!-- Ambient Background Lighting -->
+  <div class="fixed top-0 left-1/4 w-[420px] h-[420px] bg-ajun-blue/15 rounded-full blur-orb pointer-events-none -z-10"></div>
+  <div class="fixed top-1/3 right-10 w-[500px] h-[500px] bg-ajun-cyan/10 rounded-full blur-orb pointer-events-none -z-10"></div>
+
+  <!-- 1. TOP LIVE TICKER & DIRECT CONTACT BAR -->
+  <div class="bg-steel-900 border-b border-steel-800 text-xs text-slate-300 py-1.5 px-4 overflow-hidden relative z-40">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-2 shrink-0 pr-4 z-10 bg-steel-900">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-bold bg-ajun-blue text-white uppercase tracking-wider">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span> POSCO
+        </span>
+        <span class="font-semibold text-slate-200 hidden sm:inline">포스코 협력사 · 정품 철강자재 B2B 유통가공</span>
+      </div>
+
+      <!-- Live Marquee Ticker -->
+      <div class="overflow-hidden whitespace-nowrap w-full">
+        <div class="inline-block animate-marquee font-mono text-[11px] text-slate-300">
+          <span class="mx-3 text-ajun-cyan font-semibold">● [CR/냉연강판] SPCC/SPCD/SPCE 두께 0.3T~3.2T 당일 슬리팅 출하</span>
+          <span class="mx-3 text-steel-600">|</span>
+          <span class="mx-3 text-emerald-400 font-semibold">● [GI/용융아연도금] SGCC Z08~Z27 전 규격 즉시 배차 지원</span>
+          <span class="mx-3 text-steel-600">|</span>
+          <span class="mx-3 text-amber-300 font-semibold">● [EGI/전기아연도금] SECC 고내식 표면 가전·서버랙 프레스용 코일 완비</span>
+          <span class="mx-3 text-steel-600">|</span>
+          <span class="mx-3 text-sky-400 font-semibold">● [PO/산세강판] 열연 스케일 산세 제거 SPHC-P 정밀 절단</span>
+          <span class="mx-3 text-steel-600">|</span>
+          <span class="mx-3 text-indigo-300 font-semibold">● [전기강판] 모터 및 변압기용 고효율 규소강판 코어재 맞춤 샤링</span>
+          <span class="mx-3 text-steel-600">|</span>
+          <span class="mx-3 text-teal-300 font-semibold">● [알코트/ALCOT] 500℃ 내열 알루미늄 도금강판 머플러·열교환기용 확보</span>
+          <span class="mx-3 text-steel-600">|</span>
+          <span class="mx-3 text-rose-300 font-semibold">● [SUS / PIPE] STS 304/316 정밀 판재 및 구조·배관용 강관 납품</span>
+        </div>
+      </div>
+
+      <!-- Quick Executive Link -->
+      <div class="hidden lg:flex items-center gap-4 shrink-0 pl-4 z-10 bg-steel-900 text-[11px]">
+        <a href="tel:01089967505" class="text-white hover:text-ajun-cyan transition font-bold flex items-center gap-1.5">
+          <i class="fa-solid fa-mobile-screen-button text-emerald-400"></i>
+          <span>대표이사 김기태 : 010-8996-7505</span>
+        </a>
+        <a href="tel:0226341215" class="text-slate-300 hover:text-white transition flex items-center gap-1">
+          <i class="fa-solid fa-phone text-slate-400"></i> 02-2634-1215
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. MAIN HEADER & IDENTITY NAVIGATION -->
+  <header class="sticky top-0 z-40 bg-steel-950/90 backdrop-blur-md border-b border-steel-800 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+
+        <!-- Logo Area with Business Card Geometry -->
+        <a href="#" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 flex items-center justify-center p-2 rounded-xl bg-steel-900 border border-steel-700 shadow-md group-hover:border-ajun-cyan/60 transition">
+            <!-- Exact Geometry Logo SVG from Business Card -->
+            <svg viewBox="0 0 100 100" class="w-full h-full" fill="currentColor">
+              <path d="M 50 12 L 88 78 L 74 78 L 50 35 L 26 78 L 12 78 Z" fill="#0d5ca8" />
+              <path d="M 40 58 L 50 41 L 60 58 L 72 78 L 58 78 L 50 64 L 42 78 L 28 78 Z" fill="#00c3ff" />
+              <circle cx="50" cy="50" r="3" fill="#ffffff" />
+            </svg>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="font-extrabold text-xl tracking-tight text-white font-sans">(주)아준스틸</span>
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-ajun-blue/30 text-ajun-cyan border border-ajun-blue/50">POSCO 협력</span>
+            </div>
+            <p class="text-xs text-slate-400 font-medium">AJUN STEEL &middot; 고객의 가치를 창조하는 기업</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-1 font-medium text-sm">
+          <a href="#about" class="px-3.5 py-2 text-slate-300 hover:text-white hover:bg-steel-850 rounded-lg transition-colors">회사소개</a>
+          <a href="#products" class="px-3.5 py-2 text-slate-300 hover:text-white hover:bg-steel-850 rounded-lg transition-colors">8대 취급품목</a>
+          <a href="#calculator" class="px-3.5 py-2 text-slate-300 hover:text-white hover:bg-steel-850 rounded-lg transition-colors">철판 중량 계산기</a>
+          <a href="#processing" class="px-3.5 py-2 text-slate-300 hover:text-white hover:bg-steel-850 rounded-lg transition-colors">가공 및 물류망</a>
+          <a href="#contact" class="px-3.5 py-2 text-slate-300 hover:text-white hover:bg-steel-850 rounded-lg transition-colors">오시는 길</a>
+        </nav>
+
+        <!-- Right Quick Action (Call & RFQ) -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="tel:01089967505" class="px-3.5 py-2.5 rounded-lg text-xs font-semibold bg-steel-900 border border-steel-700 hover:border-emerald-500 text-slate-200 hover:text-white transition flex items-center gap-2">
+            <i class="fa-solid fa-phone text-emerald-400"></i>
+            <span>010-8996-7505</span>
+          </a>
+          <a href="#rfq-section" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg text-xs sm:text-sm font-bold bg-gradient-to-r from-ajun-blue to-ajun-lightBlue hover:opacity-95 text-white shadow-lg shadow-ajun-blue/25 transition">
+            <i class="fa-solid fa-file-invoice text-xs"></i>
+            <span>온라인 견적 문의</span>
+          </a>
+        </div>
+
+        <!-- Mobile Hamburger Button -->
+        <button id="mobileMenuBtn" class="lg:hidden p-2 rounded-lg text-slate-400 hover:text-white hover:bg-steel-850 focus:outline-none">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-steel-900 border-b border-steel-800 px-5 pt-3 pb-6 space-y-2">
+      <a href="#about" class="block px-3 py-2 rounded-md text-base text-slate-300 hover:text-white hover:bg-steel-800">회사소개</a>
+      <a href="#products" class="block px-3 py-2 rounded-md text-base text-slate-300 hover:text-white hover:bg-steel-800">8대 취급품목 (CR, GI, EGI, PO, 전기강판, 알코트, SUS, PIPE)</a>
+      <a href="#calculator" class="block px-3 py-2 rounded-md text-base text-slate-300 hover:text-white hover:bg-steel-800">철판 중량 계산기</a>
+      <a href="#processing" class="block px-3 py-2 rounded-md text-base text-slate-300 hover:text-white hover:bg-steel-800">가공 및 물류망</a>
+      <a href="#contact" class="block px-3 py-2 rounded-md text-base text-slate-300 hover:text-white hover:bg-steel-800">오시는 길 및 본사 안내</a>
+      <div class="pt-3 border-t border-steel-800 flex flex-col gap-2">
+        <a href="tel:01089967505" class="text-center py-2.5 rounded-lg bg-steel-800 text-emerald-400 font-bold text-sm">
+          <i class="fa-solid fa-mobile-screen mr-2"></i> 대표 직통 : 010-8996-7505
+        </a>
+        <a href="#rfq-section" class="w-full text-center py-2.5 bg-ajun-blue text-white font-semibold rounded-lg shadow-md text-sm">
+          온라인 견적 문의서 작성
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 3. HERO SECTION (EDITORIAL INDUSTRIAL) -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 grid-bg border-b border-steel-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Official Slogan Badge -->
+      <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full border border-ajun-blue/60 bg-steel-900/90 backdrop-blur-sm text-xs font-medium text-slate-200 mb-6 shadow-lg shadow-ajun-blue/15">
+        <span class="w-2 h-2 rounded-full bg-ajun-cyan animate-pulse"></span>
+        <span class="text-ajun-cyan font-bold tracking-wider">OFFICIAL SLOGAN</span>
+        <span class="font-semibold text-white">고객의 가치를 창조하는 기업, (주)아준스틸</span>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Main Pitch -->
+        <div class="lg:col-span-7 space-y-6">
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight">
+            원자재에서 정밀 가공까지,<br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-ajun-cyan via-white to-blue-400">
+              고객의 가치를 창조하는
+            </span><br>
+            포스코 파트너 (주)아준스틸
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-normal max-w-2xl">
+            <strong>CR, GI, EGI, PO, 전기강판, 알코트, SUS, PIPE</strong> 등 산업 전반의 필수 철강재를 
+            포스코 정품 밀시트(Mill Sheet) 보증과 함께 공급합니다. 경쟁력 있는 유통 단가와 맞춤형 슬리팅·샤링 솔루션으로 
+            귀사의 제조 경쟁력을 높여드립니다.
+          </p>
+
+          <!-- Executive Card Summary -->
+          <div class="p-4 rounded-xl bg-steel-900/90 border border-steel-700/80 flex flex-wrap items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-ajun-blue/30 text-ajun-cyan flex items-center justify-center font-bold text-lg">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">대표이사 직통 상담 창구</div>
+                <div class="text-sm font-bold text-white">대표이사 김 기 태 <span class="text-xs text-emerald-400 font-mono ml-1 font-bold">010-8996-7505</span></div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <a href="tel:01089967505" class="px-4 py-2 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-xs transition flex items-center gap-1.5 shadow">
+                <i class="fa-solid fa-phone"></i> 즉시 전화연결
+              </a>
+              <a href="mailto:ajunsteel@naver.com" class="px-3.5 py-2 rounded-lg bg-steel-800 hover:bg-steel-700 text-slate-200 hover:text-white font-semibold text-xs border border-steel-600 transition flex items-center gap-1.5">
+                <i class="fa-solid fa-envelope"></i> 견적서 메일
+              </a>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#rfq-section" class="px-6 py-3.5 rounded-lg font-bold text-sm bg-gradient-to-r from-ajun-blue via-blue-600 to-ajun-cyan hover:opacity-95 text-white shadow-xl shadow-ajun-blue/30 transition flex items-center gap-2">
+              <span>품목별 실시간 견적서 요청</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+            <a href="#calculator" class="px-6 py-3.5 rounded-lg font-semibold text-sm bg-steel-900 border border-steel-700 hover:border-slate-400 text-slate-200 hover:text-white transition flex items-center gap-2">
+              <i class="fa-solid fa-calculator text-ajun-cyan"></i>
+              <span>철판 중량 계산기</span>
+            </a>
+          </div>
+
+          <!-- 3 Feature Points -->
+          <div class="pt-4 grid grid-cols-3 gap-3 border-t border-steel-800 text-xs text-slate-300">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-shield-halved text-ajun-cyan"></i>
+              <span>포스코 정품 밀시트 100%</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-truck-fast text-emerald-400"></i>
+              <span>수도권 당일·전국 익일 직송</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-industry text-amber-400"></i>
+              <span>초정밀 슬리팅 & 샤링 지원</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Panel: Company Spec Profile -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl bg-gradient-to-b from-steel-850 to-steel-900 border border-steel-700 p-6 sm:p-8 shadow-2xl overflow-hidden">
+            <div class="absolute -top-24 -right-24 w-60 h-60 bg-ajun-blue/30 rounded-full blur-2xl pointer-events-none"></div>
+
+            <div class="flex items-center justify-between border-b border-steel-800 pb-4 mb-6">
+              <div>
+                <span class="text-[11px] font-mono uppercase tracking-widest text-ajun-cyan">COMPANY PROFILE</span>
+                <h2 class="text-xl font-bold text-white">(주)아준스틸 (AJUN STEEL)</h2>
+                <p class="text-[11px] text-slate-400 mt-0.5">고객의 가치를 창조하는 포스코 철강 파트너</p>
+              </div>
+              <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-mono text-xs font-semibold">
+                VERIFIED
+              </span>
+            </div>
+
+            <!-- Credentials Block -->
+            <div class="space-y-3.5 text-xs">
+              <div class="bg-steel-950/70 p-3.5 rounded-xl border border-steel-800/80 flex items-start gap-3">
+                <i class="fa-solid fa-location-dot text-ajun-cyan text-sm mt-0.5 shrink-0"></i>
+                <div>
+                  <span class="text-slate-400 block text-[11px]">본사 소재지</span>
+                  <span class="text-slate-100 font-medium">서울시 양천구 목동동로 233-1, 1803호</span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div class="bg-steel-950/70 p-3 rounded-xl border border-steel-800/80">
+                  <span class="text-slate-400 block text-[11px]">대표전화 (TEL)</span>
+                  <a href="tel:0226341215" class="text-slate-100 font-mono font-bold hover:text-ajun-cyan">02-2634-1215</a>
+                </div>
+                <div class="bg-steel-950/70 p-3 rounded-xl border border-steel-800/80">
+                  <span class="text-slate-400 block text-[11px]">팩스 (FAX)</span>
+                  <span class="text-slate-100 font-mono font-bold">02-2634-1216</span>
+                </div>
+              </div>
+
+              <div class="bg-steel-950/70 p-3.5 rounded-xl border border-steel-800/80">
+                <span class="text-slate-400 block text-[11px] mb-1">견적 접수 공식 이메일</span>
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 text-slate-200 font-mono font-semibold">
+                  <span>ajunsteel@naver.com</span>
+                  <span class="text-slate-400">emkt75@naver.com</span>
+                </div>
+              </div>
+
+              <div class="p-3.5 rounded-xl bg-ajun-blue/15 border border-ajun-blue/30">
+                <span class="text-ajun-cyan block text-[11px] font-bold mb-1.5">
+                  <i class="fa-solid fa-layer-group mr-1"></i> 명함 명시 8대 핵심 취급품목
+                </span>
+                <div class="flex flex-wrap gap-1.5">
+                  <span class="px-2 py-0.5 rounded bg-steel-900 text-white font-mono text-[11px] font-semibold border border-steel-700">CR</span>
+                  <span class="px-2 py-0.5 rounded bg-steel-900 text-white font-mono text-[11px] font-semibold border border-steel-700">GI</span>
+                  <span class="px-2 py-0.5 rounded bg-steel-900 text-white font-mono text-[11px] font-semibold border border-steel-700">EGI</span>
+                  <span class="px-2 py-0.5 rounded bg-steel-900 text-white font-mono text-[11px] font-semibold border border-steel-700">PO</span>
+                  <span class="px-2 py-0.5 rounded bg-steel-900 text-white font-mono text-[11px] font-semibold border border-steel-700">전기강판</span>
+                  <span class="px-2 py-0.5 rounded bg-steel-900 text-white font-mono text-[11px] font-semibold border border-steel-700">알코트</span>
+                  <span class="px-2 py-0.5 rounded bg-steel-900 text-white font-mono text-[11px] font-semibold border border-steel-700">SUS</span>
+                  <span class="px-2 py-0.5 rounded bg-steel-900 text-white font-mono text-[11px] font-semibold border border-steel-700">PIPE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card Bottom Bar -->
+            <div class="mt-5 pt-4 border-t border-steel-800 flex items-center justify-between">
+              <span class="text-slate-400 text-xs">포스코(POSCO) 공식 협력 유통망</span>
+              <a href="tel:01089967505" class="text-white hover:text-emerald-400 font-bold text-xs flex items-center gap-1.5">
+                <span>010-8996-7505</span>
+                <i class="fa-solid fa-phone text-emerald-400"></i>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 4. ABOUT & CORPORATE VISION -->
+  <section id="about" class="py-20 bg-steel-900 border-b border-steel-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row items-start md:items-end justify-between mb-12">
+        <div>
+          <span class="text-xs font-mono tracking-widest text-ajun-cyan font-bold uppercase">COMPANY SLOGAN & PHILOSOPHY</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-2">
+            “고객의 가치를 창조하는 기업”<br class="hidden sm:inline"> (주)아준스틸의 4대 핵심 약속
+          </h2>
+        </div>
+        <p class="text-slate-400 text-sm max-w-md mt-4 md:mt-0 leading-relaxed">
+          서울 양천구 목동 본사를 거점으로 전국 유통망과 코일센터 인프라를 연결하여, 고객사의 제조원가 절감과 공기 단축에 기여합니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- 1 -->
+        <div class="bg-steel-950 p-6 rounded-xl border border-steel-800 hover:border-ajun-blue transition group">
+          <div class="w-12 h-12 rounded-lg bg-ajun-blue/20 text-ajun-cyan flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">포스코 정품 밀시트 발행</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            원산지와 성분이 보증된 포스코 제철소 공인 시험성적서(Mill Sheet)를 100% 발급하여 완벽한 품질 신뢰도를 확보합니다.
+          </p>
+        </div>
+
+        <!-- 2 -->
+        <div class="bg-steel-950 p-6 rounded-xl border border-steel-800 hover:border-emerald-500 transition group">
+          <div class="w-12 h-12 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">초정밀 맞춤 가공 솔루션</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            최신 슬리터(Slitter) 및 샤링(Shearing) 설비 네트워크로 공차 &plusmn;0.2mm 이내의 정밀 분할 및 맞춤 시트 절단을 공급합니다.
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div class="bg-steel-950 p-6 rounded-xl border border-steel-800 hover:border-amber-500 transition group">
+          <div class="w-12 h-12 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-handshake"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">대표 직통의 신속 단가 회신</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            김기태 대표이사가 직접 현장 매입 단가를 검토하여 1시간 내 투명하고 경쟁력 있는 B2B 단가를 신속히 제시합니다.
+          </p>
+        </div>
+
+        <!-- 4 -->
+        <div class="bg-steel-950 p-6 rounded-xl border border-steel-800 hover:border-sky-500 transition group">
+          <div class="w-12 h-12 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-truck-ramp-box"></i>
+          </div>
+          <h3 class="text-base font-bold text-white mb-2">전국 현장 직송 배차</h3>
+          <p class="text-slate-400 text-xs leading-relaxed">
+            수도권 당일 긴급 배송 및 전국 주요 공단 직배송 트레일러망을 가동하여 결품 없는 생산 일정을 지원합니다.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 5. 8 CORE PRODUCTS (EXACT BUSINESS CARD ITEMS) -->
+  <section id="products" class="py-24 bg-steel-950 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="text-xs font-mono tracking-widest text-ajun-cyan font-bold uppercase">CORE PRODUCTS LINEUP</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+          (주)아준스틸 <span class="text-ajun-cyan">8대 핵심 취급품목</span>
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-3">
+          명함에 등재된 8대 주력 강종입니다. 상세 사양을 확인하시고 [견적 담기]를 통해 즉시 문의서를 완성하실 수 있습니다.
+        </p>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mt-8" id="productFilterBar">
+          <button onclick="filterProducts('all')" class="prod-pill active px-4 py-1.5 rounded-lg text-xs font-semibold bg-ajun-blue text-white shadow-md transition">전체 8대 품목</button>
+          <button onclick="filterProducts('cr-gi-egi')" class="prod-pill px-4 py-1.5 rounded-lg text-xs font-semibold bg-steel-900 text-slate-300 hover:text-white border border-steel-800 transition">CR &middot; GI &middot; EGI</button>
+          <button onclick="filterProducts('po-elec')" class="prod-pill px-4 py-1.5 rounded-lg text-xs font-semibold bg-steel-900 text-slate-300 hover:text-white border border-steel-800 transition">PO &middot; 전기강판</button>
+          <button onclick="filterProducts('alcot-sus')" class="prod-pill px-4 py-1.5 rounded-lg text-xs font-semibold bg-steel-900 text-slate-300 hover:text-white border border-steel-800 transition">알코트(ALCOT) &middot; SUS</button>
+          <button onclick="filterProducts('pipe')" class="prod-pill px-4 py-1.5 rounded-lg text-xs font-semibold bg-steel-900 text-slate-300 hover:text-white border border-steel-800 transition">강관 PIPE</button>
+        </div>
+      </div>
+
+      <!-- 8 Products Cards -->
+      <div id="productGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+        <!-- 1. CR -->
+        <div class="product-item group bg-steel-900 rounded-xl border border-steel-800 hover:border-ajun-cyan/60 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="cr-gi-egi">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-ajun-blue/30 text-ajun-cyan border border-ajun-blue/50">ITEM 01</span>
+              <span class="text-[11px] text-slate-400 font-mono">COLD ROLLED</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-ajun-cyan transition-colors">CR (냉연강판)</h3>
+            <p class="text-[11px] text-slate-400 mb-3">Cold Rolled Steel Sheet & Coil</p>
+
+            <div class="space-y-1.5 text-xs border-t border-b border-steel-800 py-3 mb-3 text-slate-300">
+              <div class="flex justify-between"><span class="text-slate-400">주요강종:</span><span class="font-mono text-white">SPCC, SPCD, SPCE</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">두께(T):</span><span class="font-mono">0.3mm ~ 3.2mm</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">표면:</span><span>Dull (무광), Bright (광택)</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">용도:</span><span>가전, 자동차 차체, 도장제품</span></div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              표면이 매끄럽고 가공 공차가 정밀하여 정밀 절곡 및 심가공 프레스 라인에 최적화된 소재입니다.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setProductToRfq('CR (냉연강판)')" class="flex-1 py-2 bg-steel-800 hover:bg-ajun-blue text-xs font-semibold text-white rounded-lg transition">견적 담기</button>
+            <button onclick="showSpecModal('CR')" class="px-3 py-2 bg-steel-950 text-slate-400 hover:text-white rounded-lg text-xs border border-steel-700">스펙</button>
+          </div>
+        </div>
+
+        <!-- 2. GI -->
+        <div class="product-item group bg-steel-900 rounded-xl border border-steel-800 hover:border-ajun-cyan/60 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="cr-gi-egi">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-emerald-500/20 text-emerald-400 border border-emerald-500/40">ITEM 02</span>
+              <span class="text-[11px] text-slate-400 font-mono">GALVANIZED</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-ajun-cyan transition-colors">GI (용융아연도금강판)</h3>
+            <p class="text-[11px] text-slate-400 mb-3">Galvanized Steel Sheet & Coil</p>
+
+            <div class="space-y-1.5 text-xs border-t border-b border-steel-800 py-3 mb-3 text-slate-300">
+              <div class="flex justify-between"><span class="text-slate-400">주요강종:</span><span class="font-mono text-white">SGCC, SGCD, SGCE</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">두께(T):</span><span class="font-mono">0.4mm ~ 4.5mm</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">도금량:</span><span class="font-mono">Z08 ~ Z27 (g/m²)</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">용도:</span><span>덕트, 건축 자재, 케이블트레이</span></div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              용융 아연 피복층의 자기희생 방식 작용으로 우수한 방청성을 발휘하여 건축 내외장재에 필수 적용됩니다.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setProductToRfq('GI (용융아연도금강판)')" class="flex-1 py-2 bg-steel-800 hover:bg-ajun-blue text-xs font-semibold text-white rounded-lg transition">견적 담기</button>
+            <button onclick="showSpecModal('GI')" class="px-3 py-2 bg-steel-950 text-slate-400 hover:text-white rounded-lg text-xs border border-steel-700">스펙</button>
+          </div>
+        </div>
+
+        <!-- 3. EGI -->
+        <div class="product-item group bg-steel-900 rounded-xl border border-steel-800 hover:border-ajun-cyan/60 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="cr-gi-egi">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-cyan-500/20 text-cyan-400 border border-cyan-500/40">ITEM 03</span>
+              <span class="text-[11px] text-slate-400 font-mono">ELECTRO-GALV</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-ajun-cyan transition-colors">EGI (전기아연도금강판)</h3>
+            <p class="text-[11px] text-slate-400 mb-3">Electrolytic Galvanized Steel</p>
+
+            <div class="space-y-1.5 text-xs border-t border-b border-steel-800 py-3 mb-3 text-slate-300">
+              <div class="flex justify-between"><span class="text-slate-400">주요강종:</span><span class="font-mono text-white">SECC, SECD, SECE</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">두께(T):</span><span class="font-mono">0.4mm ~ 3.2mm</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">표면특성:</span><span>내지문(Anti-Fingerprint), 도장성</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">용도:</span><span>서버랙, 통신장비, 정밀 가전</span></div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              전기도금 공법으로 도금층이 균일하여 도장 밀착성이 탁월하며, 외관 정밀도가 요구되는 전자섀시에 채택됩니다.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setProductToRfq('EGI (전기아연도금강판)')" class="flex-1 py-2 bg-steel-800 hover:bg-ajun-blue text-xs font-semibold text-white rounded-lg transition">견적 담기</button>
+            <button onclick="showSpecModal('EGI')" class="px-3 py-2 bg-steel-950 text-slate-400 hover:text-white rounded-lg text-xs border border-steel-700">스펙</button>
+          </div>
+        </div>
+
+        <!-- 4. PO -->
+        <div class="product-item group bg-steel-900 rounded-xl border border-steel-800 hover:border-ajun-cyan/60 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="po-elec">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-amber-500/20 text-amber-400 border border-amber-500/40">ITEM 04</span>
+              <span class="text-[11px] text-slate-400 font-mono">PICKLED & OILED</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-ajun-cyan transition-colors">PO (산세강판)</h3>
+            <p class="text-[11px] text-slate-400 mb-3">Pickled & Oiled Steel Sheet</p>
+
+            <div class="space-y-1.5 text-xs border-t border-b border-steel-800 py-3 mb-3 text-slate-300">
+              <div class="flex justify-between"><span class="text-slate-400">주요강종:</span><span class="font-mono text-white">SPHC-P, SAPH(자동차용)</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">두께(T):</span><span class="font-mono">1.4mm ~ 6.0mm</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">표면:</span><span>산화 스케일 제거 후 방청유 도포</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">용도:</span><span>자동차 휠, 서스펜션, 브래킷</span></div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              열연 표면의 흑피를 화학적으로 세척하여 금형 마모를 방지하고 용접성과 레이저 절단 속도를 극대화합니다.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setProductToRfq('PO (산세강판)')" class="flex-1 py-2 bg-steel-800 hover:bg-ajun-blue text-xs font-semibold text-white rounded-lg transition">견적 담기</button>
+            <button onclick="showSpecModal('PO')" class="px-3 py-2 bg-steel-950 text-slate-400 hover:text-white rounded-lg text-xs border border-steel-700">스펙</button>
+          </div>
+        </div>
+
+        <!-- 5. ELECTRICAL STEEL -->
+        <div class="product-item group bg-steel-900 rounded-xl border border-steel-800 hover:border-ajun-cyan/60 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="po-elec">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-purple-500/20 text-purple-400 border border-purple-500/40">ITEM 05</span>
+              <span class="text-[11px] text-slate-400 font-mono">ELECTRICAL STEEL</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-ajun-cyan transition-colors">전기강판 (규소강판)</h3>
+            <p class="text-[11px] text-slate-400 mb-3">Electrical Silicon Steel Sheet</p>
+
+            <div class="space-y-1.5 text-xs border-t border-b border-steel-800 py-3 mb-3 text-slate-300">
+              <div class="flex justify-between"><span class="text-slate-400">유형:</span><span class="font-mono text-white">무방향성(NO) / 방향성(GO)</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">두께(T):</span><span class="font-mono">0.20mm ~ 0.50mm 극박</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">물성:</span><span>저철손(Core Loss), 고투자율</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">용도:</span><span>EV 모터, 전동기 코어, 변압기</span></div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              전기적 에너지 손실을 최소화하는 고효율 핵심 코어 소재로 포스코 기술 기반의 슬리팅 코일을 직공급합니다.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setProductToRfq('전기강판 (규소강판)')" class="flex-1 py-2 bg-steel-800 hover:bg-ajun-blue text-xs font-semibold text-white rounded-lg transition">견적 담기</button>
+            <button onclick="showSpecModal('ELECTRICAL')" class="px-3 py-2 bg-steel-950 text-slate-400 hover:text-white rounded-lg text-xs border border-steel-700">스펙</button>
+          </div>
+        </div>
+
+        <!-- 6. ALCOT -->
+        <div class="product-item group bg-steel-900 rounded-xl border border-steel-800 hover:border-ajun-cyan/60 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="alcot-sus">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-teal-500/20 text-teal-400 border border-teal-500/40">ITEM 06</span>
+              <span class="text-[11px] text-slate-400 font-mono">ALCOT / ALUMINIZED</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-ajun-cyan transition-colors">알코트 (ALCOT)</h3>
+            <p class="text-[11px] text-slate-400 mb-3">Al-Si Coated Heat-Resistant Sheet</p>
+
+            <div class="space-y-1.5 text-xs border-t border-b border-steel-800 py-3 mb-3 text-slate-300">
+              <div class="flex justify-between"><span class="text-slate-400">도금성분:</span><span class="font-mono text-white">알루미늄 90% + 실리콘 10%</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">두께(T):</span><span class="font-mono">0.4mm ~ 2.3mm</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">특장점:</span><span>500℃ 초고내열성, 열반사 80%</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">용도:</span><span>배기 머플러, 보일러, 가스기기</span></div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              고온 산화에 견디는 알루미늄 피복 강판으로 배기계 장치 및 고열 산업용 버너 부품으로 필수 공급됩니다.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setProductToRfq('알코트 (ALCOT)')" class="flex-1 py-2 bg-steel-800 hover:bg-ajun-blue text-xs font-semibold text-white rounded-lg transition">견적 담기</button>
+            <button onclick="showSpecModal('ALCOT')" class="px-3 py-2 bg-steel-950 text-slate-400 hover:text-white rounded-lg text-xs border border-steel-700">스펙</button>
+          </div>
+        </div>
+
+        <!-- 7. SUS -->
+        <div class="product-item group bg-steel-900 rounded-xl border border-steel-800 hover:border-ajun-cyan/60 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="alcot-sus">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-blue-500/20 text-blue-400 border border-blue-500/40">ITEM 07</span>
+              <span class="text-[11px] text-slate-400 font-mono">STAINLESS STEEL</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-ajun-cyan transition-colors">SUS (스테인리스)</h3>
+            <p class="text-[11px] text-slate-400 mb-3">STS 304, 316L, 430 Sheet/Plate</p>
+
+            <div class="space-y-1.5 text-xs border-t border-b border-steel-800 py-3 mb-3 text-slate-300">
+              <div class="flex justify-between"><span class="text-slate-400">주요강종:</span><span class="font-mono text-white">STS304, STS316L, STS430</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">두께(T):</span><span class="font-mono">0.3mm ~ 12.0mm+</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">표면마감:</span><span class="font-mono">2B, BA, No.4, HL (헤어라인)</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">용도:</span><span>식품설비, 화학탱크, 반도체</span></div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              포스코 정품 STS 코일 및 후판을 보유하며 레이저 가공 전용 정품 보호비닐 부착 상태로 납품합니다.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setProductToRfq('SUS (스테인리스)')" class="flex-1 py-2 bg-steel-800 hover:bg-ajun-blue text-xs font-semibold text-white rounded-lg transition">견적 담기</button>
+            <button onclick="showSpecModal('SUS')" class="px-3 py-2 bg-steel-950 text-slate-400 hover:text-white rounded-lg text-xs border border-steel-700">스펙</button>
+          </div>
+        </div>
+
+        <!-- 8. PIPE -->
+        <div class="product-item group bg-steel-900 rounded-xl border border-steel-800 hover:border-ajun-cyan/60 p-5 flex flex-col justify-between transition-all duration-300 hover:-translate-y-1 shadow-lg" data-category="pipe">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2 py-0.5 rounded text-xs font-mono font-bold bg-rose-500/20 text-rose-400 border border-rose-500/40">ITEM 08</span>
+              <span class="text-[11px] text-slate-400 font-mono">STRUCTURAL PIPE</span>
+            </div>
+            <h3 class="text-lg font-bold text-white group-hover:text-ajun-cyan transition-colors">PIPE (강관·파이프)</h3>
+            <p class="text-[11px] text-slate-400 mb-3">Square, Round, Pipeline Steel</p>
+
+            <div class="space-y-1.5 text-xs border-t border-b border-steel-800 py-3 mb-3 text-slate-300">
+              <div class="flex justify-between"><span class="text-slate-400">형상:</span><span class="font-mono text-white">사각파이프, 원형강관, 배관용</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">치수(Size):</span><span class="font-mono">15A~500A / 20×20~200×200</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">종류:</span><span>흑관, 백관(아연도금), 컬러각관</span></div>
+              <div class="flex justify-between"><span class="text-slate-400">용도:</span><span>구조물 프레임, 배관, 태양광 구조대</span></div>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">
+              정밀 정척 절단 및 단부 베벨 가공을 지원하며 건축 가설재 및 플랜트용 배관재 전 규격 출고됩니다.
+            </p>
+          </div>
+          <div class="flex gap-2">
+            <button onclick="setProductToRfq('PIPE (강관·파이프)')" class="flex-1 py-2 bg-steel-800 hover:bg-ajun-blue text-xs font-semibold text-white rounded-lg transition">견적 담기</button>
+            <button onclick="showSpecModal('PIPE')" class="px-3 py-2 bg-steel-950 text-slate-400 hover:text-white rounded-lg text-xs border border-steel-700">스펙</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. INTERACTIVE STEEL WEIGHT CALCULATOR (THEORETICAL WEIGHT) -->
+  <section id="calculator" class="py-20 bg-steel-900 border-t border-b border-steel-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="bg-steel-950 rounded-2xl border border-steel-700 p-6 sm:p-10 shadow-2xl">
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between pb-6 mb-6 border-b border-steel-800 gap-4">
+          <div>
+            <span class="px-2.5 py-1 rounded bg-ajun-blue/20 text-ajun-cyan font-mono text-xs font-bold">THEORETICAL WEIGHT CALCULATOR</span>
+            <h3 class="text-xl sm:text-2xl font-bold text-white mt-2">철강 판재·코일 이론 중량 및 톤수 자동 계산기</h3>
+            <p class="text-xs text-slate-400 mt-1">강종별 고유 비중을 자동 적용하여 매수당 중량(kg)과 합계 톤수를 산출하고 견적서로 바로 전송합니다.</p>
+          </div>
+          <div class="text-xs font-mono text-slate-300 bg-steel-900 px-3 py-1.5 rounded-lg border border-steel-800">
+            탄소강 비중 : <span class="text-ajun-cyan font-bold">7.85</span> &middot; SUS304 : <span class="text-emerald-400 font-bold">7.93</span> &middot; 알코트 : <span class="text-teal-300 font-bold">7.80</span>
+          </div>
+        </div>
+
+        <!-- Calculator Inputs Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">적용 강종 (비중)</label>
+            <select id="calcDensitySelect" onchange="computeWeight()" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-xs font-semibold focus:border-ajun-cyan focus:outline-none">
+              <option value="7.85" data-name="CR (냉연강판)">CR (냉연강판, 7.85)</option>
+              <option value="7.85" data-name="GI (용융아연도금)">GI (용융아연도금, 7.85)</option>
+              <option value="7.85" data-name="EGI (전기아연도금)">EGI (전기아연도금, 7.85)</option>
+              <option value="7.85" data-name="PO (산세강판)">PO (산세강판, 7.85)</option>
+              <option value="7.65" data-name="전기강판">전기강판 (규소강판, 7.65)</option>
+              <option value="7.80" data-name="알코트 (ALCOT)">알코트 (ALCOT, 7.80)</option>
+              <option value="7.93" data-name="SUS304">SUS 304 (스테인리스, 7.93)</option>
+              <option value="7.98" data-name="SUS316">SUS 316L (스테인리스, 7.98)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">두께 T (mm)</label>
+            <input type="number" id="calcT" value="1.2" step="0.05" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white font-mono text-xs focus:border-ajun-cyan focus:outline-none">
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">폭 W (mm)</label>
+            <input type="number" id="calcW" value="1219" step="1" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white font-mono text-xs focus:border-ajun-cyan focus:outline-none">
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">길이 L (mm)</label>
+            <input type="number" id="calcL" value="2438" step="1" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white font-mono text-xs focus:border-ajun-cyan focus:outline-none">
+          </div>
+
+          <div>
+            <label class="block text-xs font-medium text-slate-300 mb-1">수량 (매 / Sheet)</label>
+            <input type="number" id="calcQ" value="100" step="1" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white font-mono text-xs focus:border-ajun-cyan focus:outline-none">
+          </div>
+        </div>
+
+        <!-- Calculated Results Display -->
+        <div class="mt-6 flex flex-col md:flex-row items-center justify-between gap-4 pt-4 bg-steel-900/70 p-4 rounded-xl border border-steel-800">
+          <div class="flex flex-wrap items-center gap-6">
+            <div>
+              <span class="text-xs text-slate-400 block">1매(장) 이론 중량</span>
+              <span id="calcSingleResult" class="text-xl font-bold font-mono text-white">27.97 kg</span>
+            </div>
+            <div class="w-px h-8 bg-steel-700 hidden sm:block"></div>
+            <div>
+              <span class="text-xs text-slate-400 block">총 중량 (합계 톤수)</span>
+              <span id="calcTotalResult" class="text-xl font-bold font-mono text-ajun-cyan">2.80 톤 (2,797 kg)</span>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 w-full md:w-auto">
+            <button onclick="computeWeight()" class="flex-1 md:flex-none px-4 py-2.5 bg-steel-800 hover:bg-steel-700 text-white rounded-lg text-xs font-semibold">
+              <i class="fa-solid fa-arrows-rotate mr-1"></i> 재계산
+            </button>
+            <button onclick="transferWeightToRfq()" class="flex-1 md:flex-none px-5 py-2.5 bg-gradient-to-r from-ajun-blue to-ajun-lightBlue hover:opacity-95 text-white rounded-lg text-xs font-bold shadow-lg">
+              이 계산 결과로 견적서 담기 <i class="fa-solid fa-arrow-down ml-1"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 7. PROCESSING & LOGISTICS INFRASTRUCTURE -->
+  <section id="processing" class="py-20 bg-steel-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-mono tracking-widest text-ajun-cyan font-bold uppercase">SUPPLY CHAIN & PROCESSING</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">정밀 코일 가공부터 현장 직송까지</h2>
+        <p class="text-slate-400 text-sm mt-3">
+          (주)아준스틸은 코일센터 및 파이프 생산 라인과의 직결망을 통해 최소 공차 가공과 정확한 납기를 보장합니다.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="bg-steel-900 p-6 rounded-xl border border-steel-800 relative">
+          <span class="text-3xl font-mono font-bold text-steel-700 block mb-2">01</span>
+          <h4 class="text-base font-bold text-white mb-2">포스코 정품 입고</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            포스코 제철소에서 직송된 CR, GI, PO 코일 및 원자재 파이프를 전산 입고하고 공인 Mill Sheet를 전수 확인합니다.
+          </p>
+        </div>
+
+        <div class="bg-steel-900 p-6 rounded-xl border border-steel-800 relative">
+          <span class="text-3xl font-mono font-bold text-steel-700 block mb-2">02</span>
+          <h4 class="text-base font-bold text-white mb-2">맞춤 슬리팅 & 샤링</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            고객사의 프레스 및 포밍 사양에 맞추어 원코일을 소폭 분할(슬리팅)하거나 정확한 정척 시트로 샤링 절단합니다.
+          </p>
+        </div>
+
+        <div class="bg-steel-900 p-6 rounded-xl border border-steel-800 relative">
+          <span class="text-3xl font-mono font-bold text-steel-700 block mb-2">03</span>
+          <h4 class="text-base font-bold text-white mb-2">품질 검사 및 방청 포장</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            두께 공차와 표면 조도를 정밀 검측하고 습기 유입을 차단하는 고성능 방청 래핑 및 스틸 밴딩 포장을 진행합니다.
+          </p>
+        </div>
+
+        <div class="bg-steel-900 p-6 rounded-xl border border-steel-800 relative">
+          <span class="text-3xl font-mono font-bold text-steel-700 block mb-2">04</span>
+          <h4 class="text-base font-bold text-white mb-2">전국 현장 직송 상차</h4>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            5톤부터 25톤 트레일러까지 직배송 배차를 지원하며 수도권 당일 긴급 상차 및 하차 일정에 맞추어 배송합니다.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 8. ONLINE RFQ QUOTE INQUIRY FORM -->
+  <section id="rfq-section" class="py-24 bg-steel-900 border-t border-b border-steel-800 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-12">
+        <span class="text-xs font-mono tracking-widest text-ajun-cyan font-bold uppercase">ONLINE RFQ FORM</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">철강자재 실시간 온라인 견적 의뢰</h2>
+        <p class="text-slate-400 text-sm mt-2">
+          고객의 가치를 최우선으로 생각하는 <span class="text-white font-medium">(주)아준스틸 김기태 대표이사</span>가 직접 검토 후 신속히 최적 단가를 제안드립니다.
+        </p>
+      </div>
+
+      <!-- Main Inquiry Form -->
+      <form id="rfqForm" onsubmit="handleRfqSubmit(event)" class="bg-steel-950 border border-steel-700 rounded-2xl p-6 sm:p-10 shadow-2xl space-y-6">
+
+        <!-- Part 1: Product Specifications -->
+        <div>
+          <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4 flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-ajun-blue text-white text-xs flex items-center justify-center font-mono">1</span>
+            품목 및 가공 옵션 선택
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">취급 품목 선택 <span class="text-red-400">*</span></label>
+              <select id="rfqItemSelect" required class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+                <option value="CR (냉연강판)">CR (냉연강판 / Cold Rolled Steel)</option>
+                <option value="GI (용융아연도금강판)">GI (용융아연도금강판 / Galvanized)</option>
+                <option value="EGI (전기아연도금강판)">EGI (전기아연도금강판 / Electro-Galv)</option>
+                <option value="PO (산세강판)">PO (산세강판 / Pickled & Oiled)</option>
+                <option value="전기강판 (규소강판)">전기강판 (무방향성·방향성 코어 자재)</option>
+                <option value="알코트 (ALCOT)">알코트 (ALCOT / 알루미늄 도금강판)</option>
+                <option value="SUS (스테인리스)">SUS (스테인리스 STS 304, 316L, 430 등)</option>
+                <option value="PIPE (강관·파이프)">PIPE (구조용 각관 / 배관용 강관)</option>
+                <option value="기타 철강자재 문의">기타 규격재 별도 문의</option>
+              </select>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">상세 규격 (두께×폭×길이)</label>
+              <input type="text" id="rfqSpecText" placeholder="예: 1.2T * 1219 * 2438 또는 50*50 각관" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">희망 발주량 <span class="text-red-400">*</span></label>
+              <div class="flex gap-2">
+                <input type="number" id="rfqAmount" required placeholder="예: 10" step="any" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+                <select id="rfqAmountUnit" class="bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-xs">
+                  <option value="톤(Ton)">톤(Ton)</option>
+                  <option value="매(Sheet)">매(Sheet)</option>
+                  <option value="본(Pipe)">본(Pipe)</option>
+                  <option value="kg">kg</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">가공 요청 방식</label>
+              <select id="rfqProcessType" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+                <option value="원자재 코일/정척 직출고">원자재 코일 / 정척 직출고</option>
+                <option value="샤링 가공 (맞춤 시트 절단)">샤링 가공 (맞춤 시트 절단)</option>
+                <option value="슬리팅 가공 (폭 분할 코일)">슬리팅 가공 (폭 분할 코일)</option>
+                <option value="파이프 정촌 절단 및 베벨">파이프 정촌 절단 및 베벨 가공</option>
+                <option value="레이저 정밀 절단">레이저 정밀 절단</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Part 2: Contact Information -->
+        <div class="pt-4 border-t border-steel-800">
+          <h3 class="text-sm font-bold text-white uppercase tracking-wider mb-4 flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-ajun-blue text-white text-xs flex items-center justify-center font-mono">2</span>
+            고객사 담당자 및 배송지 정보
+          </h3>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">상호명 (업체명) <span class="text-red-400">*</span></label>
+              <input type="text" id="rfqCompanyName" required placeholder="예: (주)한국정밀" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">담당자 성함 및 직함 <span class="text-red-400">*</span></label>
+              <input type="text" id="rfqManager" required placeholder="예: 박과장" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">휴대전화 번호 <span class="text-red-400">*</span></label>
+              <input type="tel" id="rfqTel" required placeholder="예: 010-1234-5678" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+            </div>
+
+            <div>
+              <label class="block text-xs font-medium text-slate-300 mb-1">이메일 (견적서 수신) <span class="text-red-400">*</span></label>
+              <input type="email" id="rfqMail" required placeholder="예: buyer@company.com" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+            </div>
+
+            <div class="sm:col-span-2">
+              <label class="block text-xs font-medium text-slate-300 mb-1">도착지 현장 주소 / 하차 조건</label>
+              <input type="text" id="rfqAddress" placeholder="예: 충남 아산시 둔포면 공장 (호이스트 보유 / 지게차 하차)" class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none">
+            </div>
+
+            <div class="sm:col-span-2">
+              <label class="block text-xs font-medium text-slate-300 mb-1">추가 요청 사항 (납기 희망일, 밀시트, 어음 결제 등)</label>
+              <textarea id="rfqMemo" rows="3" placeholder="납기 희망 일정, 포스코 Mill Sheet 발급 요청, 전자어음 결제 협의 내용 등을 자유롭게 기재해 주세요." class="w-full bg-steel-900 border border-steel-700 rounded-lg px-3 py-2.5 text-white text-sm focus:border-ajun-cyan focus:outline-none"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="pt-4 border-t border-steel-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <div class="text-xs text-slate-400 flex items-center gap-2">
+            <i class="fa-solid fa-lock text-ajun-cyan"></i>
+            <span>입력하신 견적 정보는 대표이사 직통으로 안전하게 접수됩니다.</span>
+          </div>
+
+          <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-lg font-bold text-sm bg-gradient-to-r from-ajun-blue via-blue-600 to-ajun-cyan hover:opacity-95 text-white shadow-xl shadow-ajun-blue/30 transition">
+            견적 의뢰서 즉시 전송 <i class="fa-solid fa-paper-plane ml-2"></i>
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+  </section>
+
+  <!-- 9. CONTACT & HEADQUARTERS INFORMATION (EXACT BUSINESS CARD DATA) -->
+  <section id="contact" class="py-20 bg-steel-950">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="rounded-2xl bg-steel-900 border border-steel-700 p-8 sm:p-12 shadow-2xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+
+          <div class="lg:col-span-7 space-y-5">
+            <span class="text-xs font-mono tracking-widest text-ajun-cyan font-bold uppercase">LOCATION & DIRECT CONTACT</span>
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+              (주)아준스틸 본사 안내 &middot; 대표 직통 창구
+            </h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              철강재 대량 발주, 장기 정기 공급 계약, 긴급 스펙 수급 상담은 아래 직통 연락망 또는 서울 본사로 문의해 주시기 바랍니다.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div class="bg-steel-950 p-4 rounded-xl border border-steel-800">
+                <span class="text-[11px] text-slate-400 block mb-1">본사 소재지</span>
+                <p class="text-white text-sm font-semibold">서울시 양천구 목동동로 233-1, 1803호</p>
+                <span class="text-xs text-slate-500 mt-1 block">(목동 드림타워 / 신정교 인근)</span>
+              </div>
+
+              <div class="bg-steel-950 p-4 rounded-xl border border-steel-800">
+                <span class="text-[11px] text-slate-400 block mb-1">대표이사 직통 (Mobile)</span>
+                <p class="text-emerald-400 text-base font-bold font-mono">010-8996-7505</p>
+                <span class="text-xs text-slate-400 mt-1 block">대표이사 김 기 태 (Kim Gi Tae)</span>
+              </div>
+
+              <div class="bg-steel-950 p-4 rounded-xl border border-steel-800">
+                <span class="text-[11px] text-slate-400 block mb-1">대표 전화 및 팩스</span>
+                <p class="text-white text-xs font-mono"><strong>T:</strong> 02-2634-1215</p>
+                <p class="text-white text-xs font-mono mt-0.5"><strong>F:</strong> 02-2634-1216</p>
+              </div>
+
+              <div class="bg-steel-950 p-4 rounded-xl border border-steel-800">
+                <span class="text-[11px] text-slate-400 block mb-1">견적 접수 공식 이메일</span>
+                <p class="text-slate-200 text-xs font-mono">ajunsteel@naver.com</p>
+                <p class="text-slate-400 text-xs font-mono mt-0.5">emkt75@naver.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Phone Action Box -->
+          <div class="lg:col-span-5 bg-steel-950 rounded-xl p-6 border border-steel-800 text-center">
+            <div class="w-16 h-16 rounded-2xl bg-ajun-blue/20 text-ajun-cyan flex items-center justify-center text-3xl mx-auto mb-4">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <h4 class="text-base font-bold text-white mb-1">실시간 단가 상담 & 밀시트 문의</h4>
+            <p class="text-xs text-slate-400 mb-5 leading-relaxed">
+              모바일에서 아래 버튼을 터치하시면 대표이사 직통번호로 바로 연결됩니다.
+            </p>
+            <div class="flex flex-col gap-2.5">
+              <a href="tel:01089967505" class="w-full py-3 bg-emerald-600 hover:bg-emerald-500 text-white rounded-lg font-bold text-sm transition flex items-center justify-center gap-2 shadow-lg">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span>대표 김기태 직통전화 (010-8996-7505)</span>
+              </a>
+              <a href="tel:0226341215" class="w-full py-2.5 bg-steel-900 hover:bg-steel-800 text-slate-300 hover:text-white rounded-lg text-xs font-semibold border border-steel-700 transition">
+                사무실 전화 (02-2634-1215)
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 10. NOTIFICATION POPUP (MODAL) -->
+  <div id="noticeModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200">
+    <div class="bg-steel-900 border border-steel-700 rounded-2xl max-w-md w-full p-6 text-center shadow-2xl transform transition-transform duration-200 scale-95" id="noticeModalCard">
+      <div id="modalIcon" class="w-16 h-16 rounded-full bg-ajun-blue/20 text-ajun-cyan mx-auto flex items-center justify-center text-2xl mb-4">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
+      <h4 id="modalTitle" class="text-xl font-bold text-white mb-2">견적 요청 접수 완료</h4>
+      <p id="modalDesc" class="text-xs text-slate-300 leading-relaxed mb-6">
+        (주)아준스틸 대표이사 김기태 및 전담 영업팀에 정상 접수되었습니다. 기재해주신 연락처로 신속히 최적 단가를 안내해 드리겠습니다.
+      </p>
+      <button onclick="closeNoticeModal()" class="w-full py-2.5 rounded-lg bg-ajun-blue hover:bg-blue-600 text-white font-semibold text-xs transition">
+        확인
+      </button>
+    </div>
+  </div>
+
+  <!-- 11. SPEC DETAIL MODAL (8 ITEMS) -->
+  <div id="specModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200">
+    <div class="bg-steel-900 border border-steel-700 rounded-2xl max-w-xl w-full p-6 sm:p-8 shadow-2xl relative">
+      <button onclick="closeSpecModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white text-lg">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <span class="text-xs font-mono font-bold text-ajun-cyan">TECHNICAL SPECIFICATION</span>
+      <h3 id="specModalTitle" class="text-xl font-bold text-white mt-1 mb-4">품목 기술 스펙</h3>
+
+      <div id="specModalBody" class="space-y-3.5 text-xs text-slate-300 max-h-[60vh] overflow-y-auto pr-2">
+        <!-- Dynamic Content -->
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-steel-800 flex justify-end gap-3">
+        <button onclick="closeSpecModal()" class="px-5 py-2.5 rounded-lg bg-steel-800 hover:bg-steel-700 text-white text-xs font-semibold">
+          닫기
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 12. FOOTER (BUSINESS CARD DETAILS & SLOGAN) -->
+  <footer class="bg-steel-950 border-t border-steel-800 pt-16 pb-12 text-xs text-slate-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 pb-12 border-b border-steel-850">
+
+        <!-- Identity -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 flex items-center justify-center rounded-lg bg-steel-900 border border-steel-700 p-1">
+              <svg viewBox="0 0 100 100" class="w-full h-full text-ajun-cyan" fill="currentColor">
+                <path d="M 50 12 L 88 78 L 74 78 L 50 35 L 26 78 L 12 78 Z" fill="#0d5ca8" />
+                <path d="M 40 58 L 50 41 L 60 58 L 72 78 L 58 78 L 50 64 L 42 78 L 28 78 Z" fill="#00c3ff" />
+              </svg>
+            </div>
+            <div>
+              <span class="text-base font-extrabold text-white tracking-wider font-sans">(주)아준스틸</span>
+              <span class="ml-2 px-1.5 py-0.5 rounded text-[10px] bg-ajun-blue/30 text-ajun-cyan border border-ajun-blue/40 font-mono">AJUN STEEL</span>
+            </div>
+          </div>
+
+          <p class="text-slate-300 text-xs font-medium">
+            &ldquo;고객의 가치를 창조하는 기업, (주)아준스틸&rdquo;
+          </p>
+
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            (주)아준스틸은 포스코 협력 철강 유통 전문 기업으로 냉연(CR), 도금강판(GI/EGI), 산세강판(PO), 전기강판, 알코트(ALCOT), SUS 및 파이프를 고객 맞춤형으로 공급합니다.
+          </p>
+
+          <div class="pt-1 text-slate-300 font-mono text-[11px] space-y-1">
+            <p><strong>취급품목 :</strong> CR, GI, EGI, PO, 전기강판, 알코트, SUS, PIPE</p>
+            <p class="text-emerald-400 font-sans"><i class="fa-solid fa-circle-check mr-1"></i> 포스코 공인 Mill Sheet 100% 보증 발행</p>
+          </div>
+        </div>
+
+        <!-- 8 Products Quick Links -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-3">8대 핵심 품목</h4>
+          <ul class="space-y-1.5 text-xs">
+            <li><a href="#products" onclick="setProductToRfq('CR (냉연강판)')" class="hover:text-ajun-cyan transition">CR (냉연강판)</a></li>
+            <li><a href="#products" onclick="setProductToRfq('GI (용융아연도금강판)')" class="hover:text-ajun-cyan transition">GI (용융아연도금강판)</a></li>
+            <li><a href="#products" onclick="setProductToRfq('EGI (전기아연도금강판)')" class="hover:text-ajun-cyan transition">EGI (전기아연도금강판)</a></li>
+            <li><a href="#products" onclick="setProductToRfq('PO (산세강판)')" class="hover:text-ajun-cyan transition">PO (산세강판)</a></li>
+            <li><a href="#products" onclick="setProductToRfq('전기강판 (규소강판)')" class="hover:text-ajun-cyan transition">전기강판 (NO/GO)</a></li>
+            <li><a href="#products" onclick="setProductToRfq('알코트 (ALCOT)')" class="hover:text-ajun-cyan transition">알코트 (ALCOT)</a></li>
+            <li><a href="#products" onclick="setProductToRfq('SUS (스테인리스)')" class="hover:text-ajun-cyan transition">SUS (스테인리스 304/316)</a></li>
+            <li><a href="#products" onclick="setProductToRfq('PIPE (강관·파이프)')" class="hover:text-ajun-cyan transition">PIPE (구조용 각관·배관)</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-3">B2B 고객 서비스</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#calculator" class="hover:text-white transition">철판 이론중량 자동계산기</a></li>
+            <li><a href="#processing" class="hover:text-white transition">코일 슬리팅(Slitting) 의뢰</a></li>
+            <li><a href="#processing" class="hover:text-white transition">시트 샤링(Shearing) 절단</a></li>
+            <li><a href="#rfq-section" class="hover:text-white transition">전자어음 및 여신거래 협의</a></li>
+            <li><a href="#rfq-section" class="hover:text-white transition">현장 직송 및 분할 납품</a></li>
+          </ul>
+        </div>
+
+        <!-- Business Card Credentials -->
+        <div>
+          <h4 class="text-sm font-bold text-white mb-3">연락망 (명함 정보)</h4>
+          <div class="space-y-2 text-xs">
+            <p class="text-slate-300"><strong>대표이사 :</strong> <span class="text-white font-semibold">김 기 태</span></p>
+            <p class="text-emerald-400 font-mono font-bold text-sm">
+              <a href="tel:01089967505">M 010-8996-7505</a>
+            </p>
+            <p class="text-slate-300 font-mono">T 02-2634-1215</p>
+            <p class="text-slate-300 font-mono">F 02-2634-1216</p>
+            <div class="pt-1 text-[11px] font-mono text-slate-400">
+              <p>ajunsteel@naver.com</p>
+              <p>emkt75@naver.com</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Legal Info Line -->
+      <div class="pt-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 text-[11px] text-slate-500">
+        <div>
+          <p>
+            <strong>상호 :</strong> (주)아준스틸 (AJUN STEEL) &nbsp;|&nbsp; 
+            <strong>대표이사 :</strong> 김기태 &nbsp;|&nbsp; 
+            <strong>본사 주소 :</strong> 서울시 양천구 목동동로 233-1, 1803호
+          </p>
+          <p class="mt-1">
+            <strong>TEL :</strong> 02-2634-1215 &nbsp;|&nbsp; 
+            <strong>FAX :</strong> 02-2634-1216 &nbsp;|&nbsp; 
+            <strong>MOBILE :</strong> 010-8996-7505 &nbsp;|&nbsp; 
+            <strong>E-MAIL :</strong> ajunsteel@naver.com / emkt75@naver.com
+          </p>
+        </div>
+        <p class="shrink-0 text-slate-400">
+          &copy; 2026 (주)아준스틸 (AJUN STEEL). All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 13. JAVASCRIPT LOGIC -->
+  <script>
+    // Mobile Navigation Menu Toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('#mobileMenu a').forEach(item => {
+      item.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // 8 Products Category Filtering
+    function filterProducts(cat) {
+      const cards = document.querySelectorAll('.product-item');
+      const pills = document.querySelectorAll('.prod-pill');
+
+      pills.forEach(p => {
+        p.classList.remove('active', 'bg-ajun-blue', 'text-white');
+        p.classList.add('bg-steel-900', 'text-slate-300');
+      });
+      event.target.classList.add('active', 'bg-ajun-blue', 'text-white');
+      event.target.classList.remove('bg-steel-900', 'text-slate-300');
+
+      cards.forEach(card => {
+        if (cat === 'all' || card.getAttribute('data-category') === cat) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Steel Weight Calculation Logic
+    function computeWeight() {
+      const select = document.getElementById('calcDensitySelect');
+      const density = parseFloat(select.value) || 7.85;
+      const t = parseFloat(document.getElementById('calcT').value) || 0;
+      const w = parseFloat(document.getElementById('calcW').value) || 0;
+      const l = parseFloat(document.getElementById('calcL').value) || 0;
+      const q = parseInt(document.getElementById('calcQ').value) || 1;
+
+      // Weight (kg) = Thickness (mm) * Width (m) * Length (m) * Density (g/cm³)
+      const widthM = w / 1000;
+      const lengthM = l / 1000;
+      const singleWeight = t * widthM * lengthM * density;
+      const totalWeightKg = singleWeight * q;
+      const totalWeightTon = totalWeightKg / 1000;
+
+      document.getElementById('calcSingleResult').innerText = singleWeight.toFixed(2) + ' kg';
+      document.getElementById('calcTotalResult').innerText = totalWeightTon.toFixed(2) + ' 톤 (' + Math.round(totalWeightKg).toLocaleString() + ' kg)';
+
+      return {
+        name: select.options[select.selectedIndex].getAttribute('data-name'),
+        t, w, l, q, totalWeightTon, totalWeightKg
+      };
+    }
+
+    // Transfer Calculator Data to RFQ Form
+    function transferWeightToRfq() {
+      const data = computeWeight();
+      const itemSelect = document.getElementById('rfqItemSelect');
+      const specText = document.getElementById('rfqSpecText');
+      const amount = document.getElementById('rfqAmount');
+      const unit = document.getElementById('rfqAmountUnit');
+
+      if (data.name.includes('CR')) itemSelect.value = 'CR (냉연강판)';
+      else if (data.name.includes('GI')) itemSelect.value = 'GI (용융아연도금강판)';
+      else if (data.name.includes('EGI')) itemSelect.value = 'EGI (전기아연도금강판)';
+      else if (data.name.includes('PO')) itemSelect.value = 'PO (산세강판)';
+      else if (data.name.includes('전기강판')) itemSelect.value = '전기강판 (규소강판)';
+      else if (data.name.includes('알코트')) itemSelect.value = '알코트 (ALCOT)';
+      else if (data.name.includes('SUS')) itemSelect.value = 'SUS (스테인리스)';
+
+      specText.value = `${data.t}T * ${data.w}mm * ${data.l}mm (${data.q}매)`;
+      amount.value = data.totalWeightTon.toFixed(2);
+      unit.value = '톤(Ton)';
+
+      document.getElementById('rfq-section').scrollIntoView({ behavior: 'smooth' });
+      showNoticeModal('계산 결과가 견적서에 반영되었습니다', '사업체 정보와 배송지를 입력하시고 [견적 의뢰서 즉시 전송]을 눌러주세요.', 'info');
+    }
+
+    // Set Product from Catalog directly
+    function setProductToRfq(name) {
+      document.getElementById('rfqItemSelect').value = name;
+      document.getElementById('rfq-section').scrollIntoView({ behavior: 'smooth' });
+      showNoticeModal(`'${name}' 품목 선택 완료`, '희망 규격과 수량을 기재해 주시면 신속히 견적 단가를 회신해 드리겠습니다.', 'info');
+    }
+
+    // Handle RFQ Submit
+    function handleRfqSubmit(e) {
+      e.preventDefault();
+      const comp = document.getElementById('rfqCompanyName').value;
+      const item = document.getElementById('rfqItemSelect').value;
+      const amt = document.getElementById('rfqAmount').value;
+      const unit = document.getElementById('rfqAmountUnit').value;
+
+      showNoticeModal(
+        '견적 의뢰가 정상 접수되었습니다',
+        `귀사 [${comp}]의 '${item} (${amt} ${unit})' 견적 문의가 대표이사 김기태(010-8996-7505) 및 영업 담당팀에 접수되었습니다. 1시간 이내 신속히 회신해 드리겠습니다.`,
+        'success'
+      );
+
+      e.target.reset();
+    }
+
+    // Specifications Database for 8 Items
+    const specDatabase = {
+      CR: {
+        title: "CR (냉연강판) 포스코 규격 및 기술 사양",
+        html: `
+          <ul class="space-y-2">
+            <li><strong>주요 생산 강종 :</strong> JIS G 3141 / KS D 3512 (SPCC 일반용, SPCD 가공용, SPCE 심가공용)</li>
+            <li><strong>두께 공급 범위 :</strong> 0.3mm ~ 3.2mm (초정밀 두께 공차 관리)</li>
+            <li><strong>표면 조도(Finish) :</strong> Dull Finish (무광 도료 밀착성 우수), Bright Finish (광택 유려)</li>
+            <li><strong>가공 납품 대응 :</strong> 원코일 슬리팅(폭 30mm~1600mm), 샤링 정척 절단판</li>
+            <li><strong>특장점 :</strong> 우수한 평탄도와 가공성으로 정밀 가전제품 케이스, 자동차 부품 성형에 필수</li>
+          </ul>
+        `
+      },
+      GI: {
+        title: "GI (용융아연도금강판) 기술 사양",
+        html: `
+          <ul class="space-y-2">
+            <li><strong>주요 생산 강종 :</strong> KS D 3506 (SGCC, SGCD), JIS G 3302</li>
+            <li><strong>공급 두께 및 폭 :</strong> 0.4mm ~ 4.5mm / 914mm, 1219mm, 1524mm</li>
+            <li><strong>도금 부착량 :</strong> Z08 (80g/m²) ~ Z27 (275g/m²)</li>
+            <li><strong>스팽글(Spangle) :</strong> Zero Spangle, Regular Spangle, Minimized Spangle</li>
+            <li><strong>주요 적용 분야 :</strong> 공조 덕트, 옥외 건축 자재, 케이블 트레이, 가드레일</li>
+          </ul>
+        `
+      },
+      EGI: {
+        title: "EGI (전기아연도금강판) 기술 사양",
+        html: `
+          <ul class="space-y-2">
+            <li><strong>주요 생산 강종 :</strong> KS D 3528 (SECC, SECD, SECE), JIS G 3313</li>
+            <li><strong>공급 두께 :</strong> 0.4mm ~ 3.2mm</li>
+            <li><strong>표면 처리 :</strong> 내지문 처리 (Anti-Fingerprint), 인산염 피막 처리</li>
+            <li><strong>특장점 :</strong> 도금 표면이 매우 미려하고 균일하여 분체/액체 도장 후 부착성이 최고 수준</li>
+            <li><strong>주요 적용 :</strong> 컴퓨터 서버랙, 고성능 전자기기 외장 섀시, 사무용 철재 가구</li>
+          </ul>
+        `
+      },
+      PO: {
+        title: "PO (산세강판) 기술 사양",
+        html: `
+          <ul class="space-y-2">
+            <li><strong>주요 생산 강종 :</strong> KS D 3501/3503 (SPHC-P, SPHD-P, SAPH 자동차 구조용)</li>
+            <li><strong>두께 공급 범위 :</strong> 1.4mm ~ 6.0mm (열연 두께 영역 완벽 대응)</li>
+            <li><strong>공정 특징 :</strong> 열연 표면의 흑연 산화피막을 화학적으로 완전 제거 후 고성능 방청유 도포</li>
+            <li><strong>가공상 이점 :</strong> 프레스 금형 마모 대폭 감소, 레이저 절단 속도 및 절단면 조도 현저히 향상</li>
+            <li><strong>주요 적용 :</strong> 자동차 프레임, 서스펜션 암, 압력용기 플랜지, 고난도 절곡 브래킷</li>
+          </ul>
+        `
+      },
+      ELECTRICAL: {
+        title: "전기강판 (규소강판 NO / GO) 기술 사양",
+        html: `
+          <ul class="space-y-2">
+            <li><strong>분류 및 등급 :</strong> 무방향성 전기강판(Non-Oriented), 방향성 전기강판(Grain-Oriented)</li>
+            <li><strong>두께 공급 범위 :</strong> 0.20mm ~ 0.50mm 초극박 코어 자재</li>
+            <li><strong>핵심 물성 :</strong> 고주파 및 상용주파수 조건에서 최소 철손(W/kg) 및 극대화된 자속밀도</li>
+            <li><strong>포스코 기술 인증 :</strong> 포스코 Hyper NO 라인업 매칭 공급</li>
+            <li><strong>주요 적용 :</strong> 친환경 전기차 구동모터(Traction Motor), 발전기, 대형 전력 변압기 코어</li>
+          </ul>
+        `
+      },
+      ALCOT: {
+        title: "알코트 (ALCOT / 알루미늄 도금강판) 기술 사양",
+        html: `
+          <ul class="space-y-2">
+            <li><strong>도금 성분 :</strong> Al-Si (알루미늄 90% + 실리콘 10%) 합금도금</li>
+            <li><strong>공급 두께 :</strong> 0.4mm ~ 2.3mm</li>
+            <li><strong>내열 및 반사 성능 :</strong> 500℃ 지속 가열 시에도 변색 및 산화 방지, 열반사율 80% 이상</li>
+            <li><strong>내식성 :</strong> 일반 GI 대비 열악한 산성/염분 환경에서 장기 수명 발휘</li>
+            <li><strong>주요 적용 :</strong> 자동차 배기 매니폴드 및 소음기(머플러), 보일러 버너, 오븐 레인지</li>
+          </ul>
+        `
+      },
+      SUS: {
+        title: "SUS (스테인리스강판 및 판재) 기술 사양",
+        html: `
+          <ul class="space-y-2">
+            <li><strong>주요 강종군 :</strong> STS 304, STS 316L (고내식 몰리브덴 함유), STS 430 (자성 페라이트계)</li>
+            <li><strong>두께 및 사양 :</strong> 0.3mm 박판부터 12.0mm 이상 후판까지 전 규격</li>
+            <li><strong>표면 가공 :</strong> 2B, BA(광휘소둔), No.4, HL(Hairline), 체크 플레이트(무늬판)</li>
+            <li><strong>보호 옵션 :</strong> 고출력 파이버 레이저 커팅 전용 정품 보호 비닐 래핑</li>
+            <li><strong>주요 적용 :</strong> 식품 위생 설비, 화학 저장 탱크, 반도체 클린룸 구조물</li>
+          </ul>
+        `
+      },
+      PIPE: {
+        title: "PIPE (구조용 각관 / 배관용 강관) 기술 사양",
+        html: `
+          <ul class="space-y-2">
+            <li><strong>생산 규격 :</strong> KS D 3568 (일반구조용 각형강관), KS D 3507 (배관용 탄소강관), KS D 3566</li>
+            <li><strong>단면 치수 :</strong> 사각파이프 20x20mm ~ 200x200mm / 원형 15A ~ 500A</li>
+            <li><strong>표면 및 마감 :</strong> 흑관, 용융아연도금 백관, 방청 컬러 도장 강관</li>
+            <li><strong>가공 지원 :</strong> 정촌 절단, 나사산 가공, 용접용 베벨 엔드 가공</li>
+            <li><strong>주요 적용 :</strong> 건축물 가설 프레임, 공장 지지대, 소화배관, 태양광 구조관</li>
+          </ul>
+        `
+      }
+    };
+
+    function showSpecModal(code) {
+      const data = specDatabase[code];
+      if (!data) return;
+
+      document.getElementById('specModalTitle').innerText = data.title;
+      document.getElementById('specModalBody').innerHTML = data.html;
+
+      const modal = document.getElementById('specModal');
+      modal.classList.remove('hidden');
+      setTimeout(() => modal.classList.remove('opacity-0'), 10);
+    }
+
+    function closeSpecModal() {
+      const modal = document.getElementById('specModal');
+      modal.classList.add('opacity-0');
+      setTimeout(() => modal.classList.add('hidden'), 200);
+    }
+
+    // Notification Popups
+    function showNoticeModal(title, desc, type = 'success') {
+      const modal = document.getElementById('noticeModal');
+      const card = document.getElementById('noticeModalCard');
+      const modalTitle = document.getElementById('modalTitle');
+      const modalDesc = document.getElementById('modalDesc');
+      const modalIcon = document.getElementById('modalIcon');
+
+      modalTitle.innerText = title;
+      modalDesc.innerText = desc;
+
+      if (type === 'info') {
+        modalIcon.innerHTML = '<i class="fa-solid fa-circle-info"></i>';
+        modalIcon.className = "w-16 h-16 rounded-full bg-ajun-blue/20 text-ajun-cyan mx-auto flex items-center justify-center text-2xl mb-4";
+      } else {
+        modalIcon.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+        modalIcon.className = "w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 mx-auto flex items-center justify-center text-2xl mb-4";
+      }
+
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        card.classList.remove('scale-95');
+      }, 10);
+    }
+
+    function closeNoticeModal() {
+      const modal = document.getElementById('noticeModal');
+      const card = document.getElementById('noticeModalCard');
+      modal.classList.add('opacity-0');
+      card.classList.add('scale-95');
+      setTimeout(() => modal.classList.add('hidden'), 200);
+    }
+
+    // Auto-calculate on initial load
+    window.addEventListener('DOMContentLoaded', () => {
+      computeWeight();
+      ['calcT', 'calcW', 'calcL', 'calcQ'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.addEventListener('input', computeWeight);
+      });
+    });
+  </script>
+</body>
+</html>
